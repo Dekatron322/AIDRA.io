@@ -22886,10 +22886,10 @@ nav {
   nav .brand {
     display: block;
     position: relative;
-    width: 170px;
+    width: 100px;
     padding: 20px 0px; }
     nav .brand img {
-      width: 100%; }
+      width: 50%; }
   nav .menu li a {
     display: block;
     padding: 20px 0px;
