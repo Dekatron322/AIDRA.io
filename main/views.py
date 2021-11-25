@@ -58,6 +58,15 @@ def AboutView(request):
 		context = {}
 		return render(request, "main/about.html", context )
 
+def VacancyView(request):
+	if request.method == "POST":
+		pass
+
+
+	else:
+		context = {}
+		return render(request, "main/vacancy.html", context )
+
 def EditProfileView(request):
 	if request.method == "POST":
 		pass
