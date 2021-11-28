@@ -1,1577 +1,912 @@
-{% extends "main/base.html" %}
 {% load static %}
+<!DOCTYPE html>
+<html lang="en">
 
-{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <title>AIBRA - Artifical Intelligence and Blockchain Enabled Recruitment App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="{% static 'main/assets/img/fav.png' %}" type="image/x-icon">
+    <link rel="icon" href="{% static 'main/assets/img/fv.png' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'main/assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'main/assets/css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'main/assets/css/newfont.css' %}">
+    <link rel="stylesheet" href="{% static 'main/assets/css/owl.carousel.css' %}">
+    <link rel="stylesheet" href="{% static 'main/assets/css/fontawesome-all.css' %}">
+    <link rel="stylesheet" href="{% static 'main/assets/css/swiper.css' %}">
+    <link rel="stylesheet" href="{% static 'main/assets/css/jquery.bxslider.min.css' %}">
+    <link rel="stylesheet" href="{% static 'main/assets/css/jquery.mCustomScrollbar.min.css' %}">
+    <link rel="stylesheet" href="{% static 'main/assets/css/odometer-theme-default.css' %}">
+    <link rel="stylesheet" href="{% static 'main/assets/css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'main/assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'main/assets/css/dark-version.css' %}">
+</head>
 
+<body class="app-eight-home dark-version" data-spy="scroll" data-target=".navigation-eight" data-offset="50">
+    <!-- preloader - start -->
+    <div id="preloader" class="ei-preloader"></div>
+    <div class="ei-up">
+        <a href="#" id="scrollup" class="ei-scrollup text-center"><i class="fas fa-angle-up"></i></a>
+    </div>
     
-    <section class="bg-img pt-200 pb-120" data-overlay="7" style="background-image: url(https://www.candidatemanager.net/wp-content/uploads/know_your_requirements.jpg); background-position: top center;">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="text-center mt-80">
-                        <h1 class="box-title text-white mb-30">Blockchain Enabled Recruitment</h1> 
-                    </div>
-                    <form class="cours-search">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Search Recruitment Agency, Job Title, Company, Job Seekers...">
-                            <div class="input-group-append">
-                                <button class="btn btn-block btn-primary" type="submit">Search</button> 
-                            </div>
-                        </div>
-                    </form> 
-                    <div class="text-center">
-                        <a href="courses_list.html" class="btn btn-outline text-white">Browse Job List</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="py-50 bg-white" data-aos="fade-up">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-7 col-12 text-center">
-                    <h1 class="mb-15">Explore Job Openings</h1>
-                    <hr class="w-100 bg-primary">
-                </div>
-            </div>
-            <div class="row mt-30">
-                <div class="col-12">
-                    <ul class="nav nav-tabs justify-content-center bb-0 mb-10" role="tablist">
-                        <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#all" role="tab">All</a> </li>
-                        <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#tab1" role="tab">Finance</a> </li>
-                        <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#tab2" role="tab">Tech/ICT</a> </li>
-                        <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#tab3" role="tab">Engineering</a> </li>
-                        <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#tab4" role="tab">Marketing</a> </li>
-                        <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#tab5" role="tab">Legal</a> </li>
-                        <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#tab6" role="tab">Human Resource</a> </li>
-                        <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#tab7" role="tab">Management</a> </li>
-                    </ul>
-                    <div class="tab-content">
-                        <div class="tab-pane active" id="all" role="tabpanel">
-                            <div class="px-15 pt-15">
-                                <div class="row">
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="box">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/4.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="box-body"> 
-                                                <div class="text-left">
-                                                    <h4 class="box-title">General</h4>
-                                                    <p class="mb-10 text-light font-size-12"><i class="fa fa-calendar mr-5"></i> Sept 16th, 2020</p>
-                                                    <p class="box-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                    <a href="#" class="btn btn-outline btn-primary btn-sm">Read more</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="box">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/6.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="box-body"> 
-                                                <div class="text-left">
-                                                    <h4 class="box-title">IT & Software</h4>
-                                                    <p class="mb-10 text-light font-size-12"><i class="fa fa-calendar mr-5"></i> Sept 16th, 2020</p>
-                                                    <p class="box-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                    <a href="#" class="btn btn-outline btn-primary btn-sm">Read more</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="box">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/5.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="box-body"> 
-                                                <div class="text-left">
-                                                    <h4 class="box-title">Photography</h4>
-                                                    <p class="mb-10 text-light font-size-12"><i class="fa fa-calendar mr-5"></i> Sept 16th, 2020</p>
-                                                    <p class="box-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                    <a href="#" class="btn btn-outline btn-primary btn-sm">Read more</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="box">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/2.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="box-body"> 
-                                                <div class="text-left">
-                                                    <h4 class="box-title">Programming Language</h4>
-                                                    <p class="mb-10 text-light font-size-12"><i class="fa fa-calendar mr-5"></i> Sept 16th, 2020</p>
-                                                    <p class="box-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                    <a href="#" class="btn btn-outline btn-primary btn-sm">Read more</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="box">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/7.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="box-body"> 
-                                                <div class="text-left">
-                                                    <h4 class="box-title">Business Manegement</h4>
-                                                    <p class="mb-10 text-light font-size-12"><i class="fa fa-calendar mr-5"></i> Sept 16th, 2020</p>
-                                                    <p class="box-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                    <a href="#" class="btn btn-outline btn-primary btn-sm">Read more</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="box">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/8.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="box-body"> 
-                                                <div class="text-left">
-                                                    <h4 class="box-title">UI Design</h4>
-                                                    <p class="mb-10 text-light font-size-12"><i class="fa fa-calendar mr-5"></i> Sept 16th, 2020</p>
-                                                    <p class="box-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                    <a href="#" class="btn btn-outline btn-primary btn-sm">Read more</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="box">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/9.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="box-body"> 
-                                                <div class="text-left">
-                                                    <h4 class="box-title">Manegement</h4>
-                                                    <p class="mb-10 text-light font-size-12"><i class="fa fa-calendar mr-5"></i> Sept 16th, 2020</p>
-                                                    <p class="box-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                    <a href="#" class="btn btn-outline btn-primary btn-sm">Read more</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="box">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/10.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="box-body"> 
-                                                <div class="text-left">
-                                                    <h4 class="box-title">Computer Basic</h4>
-                                                    <p class="mb-10 text-light font-size-12"><i class="fa fa-calendar mr-5"></i> Sept 16th, 2020</p>
-                                                    <p class="box-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                    <a href="#" class="btn btn-outline btn-primary btn-sm">Read more</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane" id="tab1" role="tabpanel">
-                            <div class="px-15 pt-15">
-                                <div class="row">
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="box">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/5.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="box-body"> 
-                                                <div class="text-left">
-                                                    <h4 class="box-title">Photography</h4>
-                                                    <p class="mb-10 text-light font-size-12"><i class="fa fa-calendar mr-5"></i> Sept 16th, 2020</p>
-                                                    <p class="box-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                    <a href="#" class="btn btn-outline btn-primary btn-sm">Read more</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="box">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/2.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="box-body"> 
-                                                <div class="text-left">
-                                                    <h4 class="box-title">Programming Language</h4>
-                                                    <p class="mb-10 text-light font-size-12"><i class="fa fa-calendar mr-5"></i> Sept 16th, 2020</p>
-                                                    <p class="box-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                    <a href="#" class="btn btn-outline btn-primary btn-sm">Read more</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="box">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/7.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="box-body"> 
-                                                <div class="text-left">
-                                                    <h4 class="box-title">Business Manegement</h4>
-                                                    <p class="mb-10 text-light font-size-12"><i class="fa fa-calendar mr-5"></i> Sept 16th, 2020</p>
-                                                    <p class="box-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                    <a href="#" class="btn btn-outline btn-primary btn-sm">Read more</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="box">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/8.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="box-body"> 
-                                                <div class="text-left">
-                                                    <h4 class="box-title">UI Design</h4>
-                                                    <p class="mb-10 text-light font-size-12"><i class="fa fa-calendar mr-5"></i> Sept 16th, 2020</p>
-                                                    <p class="box-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                    <a href="#" class="btn btn-outline btn-primary btn-sm">Read more</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane" id="tab2" role="tabpanel">
-                            <div class="px-15 pt-15">
-                                <div class="row">
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="box">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/7.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="box-body"> 
-                                                <div class="text-left">
-                                                    <h4 class="box-title">Business Manegement</h4>
-                                                    <p class="mb-10 text-light font-size-12"><i class="fa fa-calendar mr-5"></i> Sept 16th, 2020</p>
-                                                    <p class="box-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                    <a href="#" class="btn btn-outline btn-primary btn-sm">Read more</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="box">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/8.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="box-body"> 
-                                                <div class="text-left">
-                                                    <h4 class="box-title">UI Design</h4>
-                                                    <p class="mb-10 text-light font-size-12"><i class="fa fa-calendar mr-5"></i> Sept 16th, 2020</p>
-                                                    <p class="box-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                    <a href="#" class="btn btn-outline btn-primary btn-sm">Read more</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="box">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/9.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="box-body"> 
-                                                <div class="text-left">
-                                                    <h4 class="box-title">Manegement</h4>
-                                                    <p class="mb-10 text-light font-size-12"><i class="fa fa-calendar mr-5"></i> Sept 16th, 2020</p>
-                                                    <p class="box-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                    <a href="#" class="btn btn-outline btn-primary btn-sm">Read more</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="box">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/10.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="box-body"> 
-                                                <div class="text-left">
-                                                    <h4 class="box-title">Computer Basic</h4>
-                                                    <p class="mb-10 text-light font-size-12"><i class="fa fa-calendar mr-5"></i> Sept 16th, 2020</p>
-                                                    <p class="box-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                    <a href="#" class="btn btn-outline btn-primary btn-sm">Read more</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane" id="tab3" role="tabpanel">
-                            <div class="px-15 pt-15">
-                                <div class="row">
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="box">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/5.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="box-body"> 
-                                                <div class="text-left">
-                                                    <h4 class="box-title">Photography</h4>
-                                                    <p class="mb-10 text-light font-size-12"><i class="fa fa-calendar mr-5"></i> Sept 16th, 2020</p>
-                                                    <p class="box-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                    <a href="#" class="btn btn-outline btn-primary btn-sm">Read more</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="box">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/2.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="box-body"> 
-                                                <div class="text-left">
-                                                    <h4 class="box-title">Programming Language</h4>
-                                                    <p class="mb-10 text-light font-size-12"><i class="fa fa-calendar mr-5"></i> Sept 16th, 2020</p>
-                                                    <p class="box-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                    <a href="#" class="btn btn-outline btn-primary btn-sm">Read more</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="box">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/7.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="box-body"> 
-                                                <div class="text-left">
-                                                    <h4 class="box-title">Business Manegement</h4>
-                                                    <p class="mb-10 text-light font-size-12"><i class="fa fa-calendar mr-5"></i> Sept 16th, 2020</p>
-                                                    <p class="box-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                    <a href="#" class="btn btn-outline btn-primary btn-sm">Read more</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="box">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/8.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="box-body"> 
-                                                <div class="text-left">
-                                                    <h4 class="box-title">UI Design</h4>
-                                                    <p class="mb-10 text-light font-size-12"><i class="fa fa-calendar mr-5"></i> Sept 16th, 2020</p>
-                                                    <p class="box-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                    <a href="#" class="btn btn-outline btn-primary btn-sm">Read more</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane" id="tab4" role="tabpanel">
-                            <div class="px-15 pt-15">
-                                <div class="row">
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="box">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/7.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="box-body"> 
-                                                <div class="text-left">
-                                                    <h4 class="box-title">Business Manegement</h4>
-                                                    <p class="mb-10 text-light font-size-12"><i class="fa fa-calendar mr-5"></i> Sept 16th, 2020</p>
-                                                    <p class="box-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                    <a href="#" class="btn btn-outline btn-primary btn-sm">Read more</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="box">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/8.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="box-body"> 
-                                                <div class="text-left">
-                                                    <h4 class="box-title">UI Design</h4>
-                                                    <p class="mb-10 text-light font-size-12"><i class="fa fa-calendar mr-5"></i> Sept 16th, 2020</p>
-                                                    <p class="box-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                    <a href="#" class="btn btn-outline btn-primary btn-sm">Read more</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="box">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/9.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="box-body"> 
-                                                <div class="text-left">
-                                                    <h4 class="box-title">Manegement</h4>
-                                                    <p class="mb-10 text-light font-size-12"><i class="fa fa-calendar mr-5"></i> Sept 16th, 2020</p>
-                                                    <p class="box-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                    <a href="#" class="btn btn-outline btn-primary btn-sm">Read more</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="box">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/10.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="box-body"> 
-                                                <div class="text-left">
-                                                    <h4 class="box-title">Computer Basic</h4>
-                                                    <p class="mb-10 text-light font-size-12"><i class="fa fa-calendar mr-5"></i> Sept 16th, 2020</p>
-                                                    <p class="box-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                    <a href="#" class="btn btn-outline btn-primary btn-sm">Read more</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane" id="tab5" role="tabpanel">
-                            <div class="px-15 pt-15">
-                                <div class="row">
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="box">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/5.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="box-body"> 
-                                                <div class="text-left">
-                                                    <h4 class="box-title">Photography</h4>
-                                                    <p class="mb-10 text-light font-size-12"><i class="fa fa-calendar mr-5"></i> Sept 16th, 2020</p>
-                                                    <p class="box-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                    <a href="#" class="btn btn-outline btn-primary btn-sm">Read more</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="box">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/2.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="box-body"> 
-                                                <div class="text-left">
-                                                    <h4 class="box-title">Programming Language</h4>
-                                                    <p class="mb-10 text-light font-size-12"><i class="fa fa-calendar mr-5"></i> Sept 16th, 2020</p>
-                                                    <p class="box-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                    <a href="#" class="btn btn-outline btn-primary btn-sm">Read more</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="box">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/7.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="box-body"> 
-                                                <div class="text-left">
-                                                    <h4 class="box-title">Business Manegement</h4>
-                                                    <p class="mb-10 text-light font-size-12"><i class="fa fa-calendar mr-5"></i> Sept 16th, 2020</p>
-                                                    <p class="box-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                    <a href="#" class="btn btn-outline btn-primary btn-sm">Read more</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="box">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/8.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="box-body"> 
-                                                <div class="text-left">
-                                                    <h4 class="box-title">UI Design</h4>
-                                                    <p class="mb-10 text-light font-size-12"><i class="fa fa-calendar mr-5"></i> Sept 16th, 2020</p>
-                                                    <p class="box-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                    <a href="#" class="btn btn-outline btn-primary btn-sm">Read more</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane" id="tab6" role="tabpanel">
-                            <div class="px-15 pt-15">
-                                <div class="row">
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="box">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/7.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="box-body"> 
-                                                <div class="text-left">
-                                                    <h4 class="box-title">Business Manegement</h4>
-                                                    <p class="mb-10 text-light font-size-12"><i class="fa fa-calendar mr-5"></i> Sept 16th, 2020</p>
-                                                    <p class="box-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                    <a href="#" class="btn btn-outline btn-primary btn-sm">Read more</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="box">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/8.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="box-body"> 
-                                                <div class="text-left">
-                                                    <h4 class="box-title">UI Design</h4>
-                                                    <p class="mb-10 text-light font-size-12"><i class="fa fa-calendar mr-5"></i> Sept 16th, 2020</p>
-                                                    <p class="box-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                    <a href="#" class="btn btn-outline btn-primary btn-sm">Read more</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="box">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/9.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="box-body"> 
-                                                <div class="text-left">
-                                                    <h4 class="box-title">Manegement</h4>
-                                                    <p class="mb-10 text-light font-size-12"><i class="fa fa-calendar mr-5"></i> Sept 16th, 2020</p>
-                                                    <p class="box-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                    <a href="#" class="btn btn-outline btn-primary btn-sm">Read more</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="box">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/10.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="box-body"> 
-                                                <div class="text-left">
-                                                    <h4 class="box-title">Computer Basic</h4>
-                                                    <p class="mb-10 text-light font-size-12"><i class="fa fa-calendar mr-5"></i> Sept 16th, 2020</p>
-                                                    <p class="box-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                    <a href="#" class="btn btn-outline btn-primary btn-sm">Read more</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane" id="tab7" role="tabpanel">
-                            <div class="px-15 pt-15">
-                                <div class="row">
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="box">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/4.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="box-body"> 
-                                                <div class="text-left">
-                                                    <h4 class="box-title">General</h4>
-                                                    <p class="mb-10 text-light font-size-12"><i class="fa fa-calendar mr-5"></i> Sept 16th, 2020</p>
-                                                    <p class="box-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                    <a href="#" class="btn btn-outline btn-primary btn-sm">Read more</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="box">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/6.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="box-body"> 
-                                                <div class="text-left">
-                                                    <h4 class="box-title">IT & Software</h4>
-                                                    <p class="mb-10 text-light font-size-12"><i class="fa fa-calendar mr-5"></i> Sept 16th, 2020</p>
-                                                    <p class="box-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                    <a href="#" class="btn btn-outline btn-primary btn-sm">Read more</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="box">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/9.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="box-body"> 
-                                                <div class="text-left">
-                                                    <h4 class="box-title">Manegement</h4>
-                                                    <p class="mb-10 text-light font-size-12"><i class="fa fa-calendar mr-5"></i> Sept 16th, 2020</p>
-                                                    <p class="box-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                    <a href="#" class="btn btn-outline btn-primary btn-sm">Read more</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="box">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/10.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="box-body"> 
-                                                <div class="text-left">
-                                                    <h4 class="box-title">Computer Basic</h4>
-                                                    <p class="mb-10 text-light font-size-12"><i class="fa fa-calendar mr-5"></i> Sept 16th, 2020</p>
-                                                    <p class="box-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                    <a href="#" class="btn btn-outline btn-primary btn-sm">Read more</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="pt-xl-100 pb-50" data-aos="fade-up">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-10 col-12">
-                    <div class="box box-body p-xl-50 p-30">
-                        <div class="row align-items-center">
-                            <div class="col-lg-6 col-12">
-                                <p class="badge badge-warning badge-lg">sponsored</p>
-                                <h1 class="mb-15">Recruitment Agencies</h1>
-                                <h4 class="font-weight-400">View and hire experienced recruitment Agencies on Dara.</h4>
-                                <p class="font-size-22">Experience Plus for free and start<br> learning from the best</p>
-                                <a href="#" class="btn btn-outline btn-primary">See all</a>
-                            </div>
-                            <div class="col-lg-6 col-12">
-                                <div class="media-list media-list-hover media-list-divided md-post mt-lg-0 mt-30">
-                                    <a class="media media-single box-shadowed bg-white pull-up mb-15" href="#">
-                                      <img class="w-80 rounded ml-0" src="{% static 'main/images/front-end-img/avatar/1.jpg' %}" alt="...">
-                                      <div class="media-body font-weight-500">
-                                        <h5 class="overflow-hidden text-overflow-h nowrap">Basic English for IBPS SO/ IBPS PO/IBPS Clerk exams | 5 PM</h5>
-                                        <small class="text-fade">Today, 5:00 PM</small>
-                                        <p><small class="text-fade mt-10">Johen doe</small></p>
-                                      </div>
-                                    </a>
-                                    <a class="media media-single box-shadowed bg-white pull-up mb-15" href="#">
-                                      <img class="w-80 rounded ml-0" src="{% static 'main/images/front-end-img/avatar/2.jpg' %}" alt="...">
-                                      <div class="media-body font-weight-500">
-                                        <h5 class="overflow-hidden text-overflow-h nowrap">Basic English for IBPS SO/ IBPS PO/IBPS Clerk exams | 5 PM</h5>
-                                        <small class="text-fade">Today, 5:00 PM</small>
-                                        <p><small class="text-fade mt-10">Johen doe</small></p>
-                                      </div>
-                                    </a>
-                                    <a class="media media-single box-shadowed bg-white pull-up mb-15" href="#">
-                                      <img class="w-80 rounded ml-0" src="{% static 'main/images/front-end-img/avatar/3.jpg' %}" alt="...">
-                                      <div class="media-body font-weight-500">
-                                        <h5 class="overflow-hidden text-overflow-h nowrap">Basic English for IBPS SO/ IBPS PO/IBPS Clerk exams | 5 PM</h5>
-                                        <small class="text-fade">Today, 5:00 PM</small>
-                                        <p><small class="text-fade mt-10">Johen doe</small></p>
-                                      </div>
-                                    </a>
-                                    <a class="media media-single box-shadowed bg-white pull-up mb-0" href="#">
-                                      <img class="w-80 rounded ml-0" src="{% static 'main/images/front-end-img/avatar/4.jpg' %}" alt="...">
-                                      <div class="media-body font-weight-500">
-                                        <h5 class="overflow-hidden text-overflow-h nowrap">Basic English for IBPS SO/ IBPS PO/IBPS Clerk exams | 5 PM</h5>
-                                        <small class="text-fade">Today, 5:00 PM</small>
-                                        <p><small class="text-fade mt-10">Johen doe</small></p>
-                                      </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>                      
-        </div>
-    </section>
-    
-    <section class="py-50" data-aos="fade-up">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-7 col-12 text-center">
-                    <h1 class="mb-15">Our top Partners.</h1>                 
-                    <hr class="w-100 bg-primary">
-                </div>
-            </div>
-            <div class="row mt-30">
-                <div class="col-12">
-                    <div class="owl-carousel owl-theme owl-btn-1" data-nav-arrow="false" data-nav-dots="false" data-items="6" data-md-items="4" data-sm-items="3" data-xs-items="2" data-xx-items="2">
-                        <div class="item"><img src="{% static 'main/images/front-end-img/unilogo/uni-1.jpg' %}" class="img-fluid my-15 rounded box-shadowed pull-up" alt="" ></div>
-                        <div class="item"><img src="{% static 'main/images/front-end-img/unilogo/uni-2.jpg' %}" class="img-fluid my-15 rounded box-shadowed pull-up" alt="" ></div>
-                        <div class="item"><img src="{% static 'main/images/front-end-img/unilogo/uni-3.jpg' %}" class="img-fluid my-15 rounded box-shadowed pull-up" alt="" ></div>
-                        <div class="item"><img src="{% static 'main/images/front-end-img/unilogo/uni-4.jpg' %}" class="img-fluid my-15 rounded box-shadowed pull-up" alt="" ></div>
-                        <div class="item"><img src="{% static 'main/images/front-end-img/unilogo/uni-5.jpg' %}" class="img-fluid my-15 rounded box-shadowed pull-up" alt="" ></div>
-                        <div class="item"><img src="{% static 'main/images/front-end-img/unilogo/uni-6.jpg' %}" class="img-fluid my-15 rounded box-shadowed pull-up" alt="" ></div>
-                        <div class="item"><img src="{% static 'main/images/front-end-img/unilogo/uni-7.jpg' %}" class="img-fluid my-15 rounded box-shadowed pull-up" alt="" ></div>
-                        <div class="item"><img src="{% static 'main/images/front-end-img/unilogo/uni-8.jpg' %}" class="img-fluid my-15 rounded box-shadowed pull-up" alt="" ></div>
-                        <div class="item"><img src="{% static 'main/images/front-end-img/unilogo/uni-9.jpg' %}" class="img-fluid my-15 rounded box-shadowed pull-up" alt="" ></div>
-                        <div class="item"><img src="{% static 'main/images/front-end-img/unilogo/uni-10.jpg' %}" class="img-fluid my-15 rounded box-shadowed pull-up" alt="" ></div>
-                        <div class="item"><img src="{% static 'main/images/front-end-img/unilogo/uni-11.jpg' %}" class="img-fluid my-15 rounded box-shadowed pull-up" alt="" ></div>
-                        <div class="item"><img src="{% static 'main/images/front-end-img/unilogo/uni-12.jpg' %}" class="img-fluid my-15 rounded box-shadowed pull-up" alt="" ></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="py-50 bg-white" data-aos="fade-up">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-7 col-12 text-center">
-                    <h1 class="mb-15">View Job Seekers</h1>             
-                    <hr class="w-100 bg-primary">
-                </div>
-            </div>
-            <div class="row mt-30">
-                <div class="col-12">
-                    <ul class="nav nav-tabs justify-content-center bb-0 mb-10" role="tablist">
-                        <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#tab8" role="tab">MBA</a> </li>
-                        <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#tab9" role="tab">Machine Learning</a> </li>
-                        <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#tab10" role="tab">Software & Technology</a> </li>
-                        <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#tab11" role="tab">Marketing</a> </li>
-                        <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#tab12" role="tab">Law</a> </li>
-                        <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#tab13" role="tab">Management</a> </li>
-                    </ul>
-                    <div class="tab-content">
-                        <div class="tab-pane active" id="tab8" role="tabpanel">
-                            <div class="px-15 pt-15">
-                                <div class="row">
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="card">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/1.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="position-absolute r-10 t-10"> 
-                                                <button type="button" class="waves-effect waves-circle btn btn-circle btn-dark btn-xs mr-5"><i class="fa fa-heart-o"></i></button>
-                                                <button type="button" class="waves-effect waves-circle btn btn-circle btn-dark btn-xs mr-5"><i class="fa fa-share-alt"></i></button>
-                                            </div>
-                                          <div class="card-body">
-                                            <span class="badge badge-success mb-10">Online</span>
-                                            <h4 class="card-title">Manegement</h4>
-                                            <div class="d-flex justify-content-between">
-                                                <a href="#"><span class="font-weight-bold">Duration:</span> 6 Months</a>
-                                                <a href="#"><span class="font-weight-bold">Daily:</span> 2 Hours</a>
-                                            </div>
-                                          </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="card">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/9.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="position-absolute r-10 t-10"> 
-                                                <button type="button" class="waves-effect waves-circle btn btn-circle btn-dark btn-xs mr-5"><i class="fa fa-heart-o"></i></button>
-                                                <button type="button" class="waves-effect waves-circle btn btn-circle btn-dark btn-xs mr-5"><i class="fa fa-share-alt"></i></button>
-                                            </div>
-                                          <div class="card-body">
-                                            <span class="badge badge-success mb-10">Online</span>
-                                            <h4 class="card-title">Networking</h4>
-                                            <div class="d-flex justify-content-between">
-                                                <a href="#"><span class="font-weight-bold">Duration:</span> 6 Months</a>
-                                                <a href="#"><span class="font-weight-bold">Daily:</span> 2 Hours</a>
-                                            </div>
-                                          </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="card">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/8.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="position-absolute r-10 t-10"> 
-                                                <button type="button" class="waves-effect waves-circle btn btn-circle btn-dark btn-xs mr-5"><i class="fa fa-heart-o"></i></button>
-                                                <button type="button" class="waves-effect waves-circle btn btn-circle btn-dark btn-xs mr-5"><i class="fa fa-share-alt"></i></button>
-                                            </div>
-                                          <div class="card-body">
-                                            <span class="badge badge-success mb-10">Online</span>
-                                            <h4 class="card-title">Security</h4>
-                                            <div class="d-flex justify-content-between">
-                                                <a href="#"><span class="font-weight-bold">Duration:</span> 6 Months</a>
-                                                <a href="#"><span class="font-weight-bold">Daily:</span> 2 Hours</a>
-                                            </div>
-                                          </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="card">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/7.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="position-absolute r-10 t-10"> 
-                                                <button type="button" class="waves-effect waves-circle btn btn-circle btn-dark btn-xs mr-5"><i class="fa fa-heart-o"></i></button>
-                                                <button type="button" class="waves-effect waves-circle btn btn-circle btn-dark btn-xs mr-5"><i class="fa fa-share-alt"></i></button>
-                                            </div>
-                                          <div class="card-body">
-                                            <span class="badge badge-success mb-10">Online</span>
-                                            <h4 class="card-title">IT & Software</h4>
-                                            <div class="d-flex justify-content-between">
-                                                <a href="#"><span class="font-weight-bold">Duration:</span> 6 Months</a>
-                                                <a href="#"><span class="font-weight-bold">Daily:</span> 2 Hours</a>
-                                            </div>
-                                          </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane" id="tab9" role="tabpanel">
-                            <div class="px-15 pt-15">
-                                <div class="row">
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="card">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/7.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="position-absolute r-10 t-10"> 
-                                                <button type="button" class="waves-effect waves-circle btn btn-circle btn-dark btn-xs mr-5"><i class="fa fa-heart-o"></i></button>
-                                                <button type="button" class="waves-effect waves-circle btn btn-circle btn-dark btn-xs mr-5"><i class="fa fa-share-alt"></i></button>
-                                            </div>
-                                          <div class="card-body">
-                                            <span class="badge badge-success mb-10">Online</span>
-                                            <h4 class="card-title">IT & Software</h4>
-                                            <div class="d-flex justify-content-between">
-                                                <a href="#"><span class="font-weight-bold">Duration:</span> 6 Months</a>
-                                                <a href="#"><span class="font-weight-bold">Daily:</span> 2 Hours</a>
-                                            </div>
-                                          </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="card">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/1.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="position-absolute r-10 t-10"> 
-                                                <button type="button" class="waves-effect waves-circle btn btn-circle btn-dark btn-xs mr-5"><i class="fa fa-heart-o"></i></button>
-                                                <button type="button" class="waves-effect waves-circle btn btn-circle btn-dark btn-xs mr-5"><i class="fa fa-share-alt"></i></button>
-                                            </div>
-                                          <div class="card-body">
-                                            <span class="badge badge-success mb-10">Online</span>
-                                            <h4 class="card-title">Manegement</h4>
-                                            <div class="d-flex justify-content-between">
-                                                <a href="#"><span class="font-weight-bold">Duration:</span> 6 Months</a>
-                                                <a href="#"><span class="font-weight-bold">Daily:</span> 2 Hours</a>
-                                            </div>
-                                          </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="card">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/9.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="position-absolute r-10 t-10"> 
-                                                <button type="button" class="waves-effect waves-circle btn btn-circle btn-dark btn-xs mr-5"><i class="fa fa-heart-o"></i></button>
-                                                <button type="button" class="waves-effect waves-circle btn btn-circle btn-dark btn-xs mr-5"><i class="fa fa-share-alt"></i></button>
-                                            </div>
-                                          <div class="card-body">
-                                            <span class="badge badge-success mb-10">Online</span>
-                                            <h4 class="card-title">Networking</h4>
-                                            <div class="d-flex justify-content-between">
-                                                <a href="#"><span class="font-weight-bold">Duration:</span> 6 Months</a>
-                                                <a href="#"><span class="font-weight-bold">Daily:</span> 2 Hours</a>
-                                            </div>
-                                          </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="card">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/8.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="position-absolute r-10 t-10"> 
-                                                <button type="button" class="waves-effect waves-circle btn btn-circle btn-dark btn-xs mr-5"><i class="fa fa-heart-o"></i></button>
-                                                <button type="button" class="waves-effect waves-circle btn btn-circle btn-dark btn-xs mr-5"><i class="fa fa-share-alt"></i></button>
-                                            </div>
-                                          <div class="card-body">
-                                            <span class="badge badge-success mb-10">Online</span>
-                                            <h4 class="card-title">Security</h4>
-                                            <div class="d-flex justify-content-between">
-                                                <a href="#"><span class="font-weight-bold">Duration:</span> 6 Months</a>
-                                                <a href="#"><span class="font-weight-bold">Daily:</span> 2 Hours</a>
-                                            </div>
-                                          </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane" id="tab10" role="tabpanel">
-                            <div class="px-15 pt-15">
-                                <div class="row">
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="card">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/8.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="position-absolute r-10 t-10"> 
-                                                <button type="button" class="waves-effect waves-circle btn btn-circle btn-dark btn-xs mr-5"><i class="fa fa-heart-o"></i></button>
-                                                <button type="button" class="waves-effect waves-circle btn btn-circle btn-dark btn-xs mr-5"><i class="fa fa-share-alt"></i></button>
-                                            </div>
-                                          <div class="card-body">
-                                            <span class="badge badge-success mb-10">Online</span>
-                                            <h4 class="card-title">Security</h4>
-                                            <div class="d-flex justify-content-between">
-                                                <a href="#"><span class="font-weight-bold">Duration:</span> 6 Months</a>
-                                                <a href="#"><span class="font-weight-bold">Daily:</span> 2 Hours</a>
-                                            </div>
-                                          </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="card">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/7.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="position-absolute r-10 t-10"> 
-                                                <button type="button" class="waves-effect waves-circle btn btn-circle btn-dark btn-xs mr-5"><i class="fa fa-heart-o"></i></button>
-                                                <button type="button" class="waves-effect waves-circle btn btn-circle btn-dark btn-xs mr-5"><i class="fa fa-share-alt"></i></button>
-                                            </div>
-                                          <div class="card-body">
-                                            <span class="badge badge-success mb-10">Online</span>
-                                            <h4 class="card-title">IT & Software</h4>
-                                            <div class="d-flex justify-content-between">
-                                                <a href="#"><span class="font-weight-bold">Duration:</span> 6 Months</a>
-                                                <a href="#"><span class="font-weight-bold">Daily:</span> 2 Hours</a>
-                                            </div>
-                                          </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="card">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/9.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="position-absolute r-10 t-10"> 
-                                                <button type="button" class="waves-effect waves-circle btn btn-circle btn-dark btn-xs mr-5"><i class="fa fa-heart-o"></i></button>
-                                                <button type="button" class="waves-effect waves-circle btn btn-circle btn-dark btn-xs mr-5"><i class="fa fa-share-alt"></i></button>
-                                            </div>
-                                          <div class="card-body">
-                                            <span class="badge badge-success mb-10">Online</span>
-                                            <h4 class="card-title">Networking</h4>
-                                            <div class="d-flex justify-content-between">
-                                                <a href="#"><span class="font-weight-bold">Duration:</span> 6 Months</a>
-                                                <a href="#"><span class="font-weight-bold">Daily:</span> 2 Hours</a>
-                                            </div>
-                                          </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="card">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/1.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="position-absolute r-10 t-10"> 
-                                                <button type="button" class="waves-effect waves-circle btn btn-circle btn-dark btn-xs mr-5"><i class="fa fa-heart-o"></i></button>
-                                                <button type="button" class="waves-effect waves-circle btn btn-circle btn-dark btn-xs mr-5"><i class="fa fa-share-alt"></i></button>
-                                            </div>
-                                          <div class="card-body">
-                                            <span class="badge badge-success mb-10">Online</span>
-                                            <h4 class="card-title">Manegement</h4>
-                                            <div class="d-flex justify-content-between">
-                                                <a href="#"><span class="font-weight-bold">Duration:</span> 6 Months</a>
-                                                <a href="#"><span class="font-weight-bold">Daily:</span> 2 Hours</a>
-                                            </div>
-                                          </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane" id="tab11" role="tabpanel">
-                            <div class="px-15 pt-15">
-                                <div class="row">
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="card">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/1.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="position-absolute r-10 t-10"> 
-                                                <button type="button" class="waves-effect waves-circle btn btn-circle btn-dark btn-xs mr-5"><i class="fa fa-heart-o"></i></button>
-                                                <button type="button" class="waves-effect waves-circle btn btn-circle btn-dark btn-xs mr-5"><i class="fa fa-share-alt"></i></button>
-                                            </div>
-                                          <div class="card-body">
-                                            <span class="badge badge-success mb-10">Online</span>
-                                            <h4 class="card-title">Manegement</h4>
-                                            <div class="d-flex justify-content-between">
-                                                <a href="#"><span class="font-weight-bold">Duration:</span> 6 Months</a>
-                                                <a href="#"><span class="font-weight-bold">Daily:</span> 2 Hours</a>
-                                            </div>
-                                          </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="card">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/7.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="position-absolute r-10 t-10"> 
-                                                <button type="button" class="waves-effect waves-circle btn btn-circle btn-dark btn-xs mr-5"><i class="fa fa-heart-o"></i></button>
-                                                <button type="button" class="waves-effect waves-circle btn btn-circle btn-dark btn-xs mr-5"><i class="fa fa-share-alt"></i></button>
-                                            </div>
-                                          <div class="card-body">
-                                            <span class="badge badge-success mb-10">Online</span>
-                                            <h4 class="card-title">IT & Software</h4>
-                                            <div class="d-flex justify-content-between">
-                                                <a href="#"><span class="font-weight-bold">Duration:</span> 6 Months</a>
-                                                <a href="#"><span class="font-weight-bold">Daily:</span> 2 Hours</a>
-                                            </div>
-                                          </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="card">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/9.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="position-absolute r-10 t-10"> 
-                                                <button type="button" class="waves-effect waves-circle btn btn-circle btn-dark btn-xs mr-5"><i class="fa fa-heart-o"></i></button>
-                                                <button type="button" class="waves-effect waves-circle btn btn-circle btn-dark btn-xs mr-5"><i class="fa fa-share-alt"></i></button>
-                                            </div>
-                                          <div class="card-body">
-                                            <span class="badge badge-success mb-10">Online</span>
-                                            <h4 class="card-title">Networking</h4>
-                                            <div class="d-flex justify-content-between">
-                                                <a href="#"><span class="font-weight-bold">Duration:</span> 6 Months</a>
-                                                <a href="#"><span class="font-weight-bold">Daily:</span> 2 Hours</a>
-                                            </div>
-                                          </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="card">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/8.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="position-absolute r-10 t-10"> 
-                                                <button type="button" class="waves-effect waves-circle btn btn-circle btn-dark btn-xs mr-5"><i class="fa fa-heart-o"></i></button>
-                                                <button type="button" class="waves-effect waves-circle btn btn-circle btn-dark btn-xs mr-5"><i class="fa fa-share-alt"></i></button>
-                                            </div>
-                                          <div class="card-body">
-                                            <span class="badge badge-success mb-10">Online</span>
-                                            <h4 class="card-title">Security</h4>
-                                            <div class="d-flex justify-content-between">
-                                                <a href="#"><span class="font-weight-bold">Duration:</span> 6 Months</a>
-                                                <a href="#"><span class="font-weight-bold">Daily:</span> 2 Hours</a>
-                                            </div>
-                                          </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane" id="tab12" role="tabpanel">
-                            <div class="px-15 pt-15">
-                                <div class="row">
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="card">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/8.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="position-absolute r-10 t-10"> 
-                                                <button type="button" class="waves-effect waves-circle btn btn-circle btn-dark btn-xs mr-5"><i class="fa fa-heart-o"></i></button>
-                                                <button type="button" class="waves-effect waves-circle btn btn-circle btn-dark btn-xs mr-5"><i class="fa fa-share-alt"></i></button>
-                                            </div>
-                                          <div class="card-body">
-                                            <span class="badge badge-success mb-10">Online</span>
-                                            <h4 class="card-title">Security</h4>
-                                            <div class="d-flex justify-content-between">
-                                                <a href="#"><span class="font-weight-bold">Duration:</span> 6 Months</a>
-                                                <a href="#"><span class="font-weight-bold">Daily:</span> 2 Hours</a>
-                                            </div>
-                                          </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="card">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/7.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="position-absolute r-10 t-10"> 
-                                                <button type="button" class="waves-effect waves-circle btn btn-circle btn-dark btn-xs mr-5"><i class="fa fa-heart-o"></i></button>
-                                                <button type="button" class="waves-effect waves-circle btn btn-circle btn-dark btn-xs mr-5"><i class="fa fa-share-alt"></i></button>
-                                            </div>
-                                          <div class="card-body">
-                                            <span class="badge badge-success mb-10">Online</span>
-                                            <h4 class="card-title">IT & Software</h4>
-                                            <div class="d-flex justify-content-between">
-                                                <a href="#"><span class="font-weight-bold">Duration:</span> 6 Months</a>
-                                                <a href="#"><span class="font-weight-bold">Daily:</span> 2 Hours</a>
-                                            </div>
-                                          </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="card">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/1.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="position-absolute r-10 t-10"> 
-                                                <button type="button" class="waves-effect waves-circle btn btn-circle btn-dark btn-xs mr-5"><i class="fa fa-heart-o"></i></button>
-                                                <button type="button" class="waves-effect waves-circle btn btn-circle btn-dark btn-xs mr-5"><i class="fa fa-share-alt"></i></button>
-                                            </div>
-                                          <div class="card-body">
-                                            <span class="badge badge-success mb-10">Online</span>
-                                            <h4 class="card-title">Manegement</h4>
-                                            <div class="d-flex justify-content-between">
-                                                <a href="#"><span class="font-weight-bold">Duration:</span> 6 Months</a>
-                                                <a href="#"><span class="font-weight-bold">Daily:</span> 2 Hours</a>
-                                            </div>
-                                          </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="card">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/9.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="position-absolute r-10 t-10"> 
-                                                <button type="button" class="waves-effect waves-circle btn btn-circle btn-dark btn-xs mr-5"><i class="fa fa-heart-o"></i></button>
-                                                <button type="button" class="waves-effect waves-circle btn btn-circle btn-dark btn-xs mr-5"><i class="fa fa-share-alt"></i></button>
-                                            </div>
-                                          <div class="card-body">
-                                            <span class="badge badge-success mb-10">Online</span>
-                                            <h4 class="card-title">Networking</h4>
-                                            <div class="d-flex justify-content-between">
-                                                <a href="#"><span class="font-weight-bold">Duration:</span> 6 Months</a>
-                                                <a href="#"><span class="font-weight-bold">Daily:</span> 2 Hours</a>
-                                            </div>
-                                          </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane" id="tab13" role="tabpanel">
-                            <div class="px-15 pt-15">
-                                <div class="row">
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="card">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/9.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="position-absolute r-10 t-10"> 
-                                                <button type="button" class="waves-effect waves-circle btn btn-circle btn-dark btn-xs mr-5"><i class="fa fa-heart-o"></i></button>
-                                                <button type="button" class="waves-effect waves-circle btn btn-circle btn-dark btn-xs mr-5"><i class="fa fa-share-alt"></i></button>
-                                            </div>
-                                          <div class="card-body">
-                                            <span class="badge badge-success mb-10">Online</span>
-                                            <h4 class="card-title">Networking</h4>
-                                            <div class="d-flex justify-content-between">
-                                                <a href="#"><span class="font-weight-bold">Duration:</span> 6 Months</a>
-                                                <a href="#"><span class="font-weight-bold">Daily:</span> 2 Hours</a>
-                                            </div>
-                                          </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="card">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/8.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="position-absolute r-10 t-10"> 
-                                                <button type="button" class="waves-effect waves-circle btn btn-circle btn-dark btn-xs mr-5"><i class="fa fa-heart-o"></i></button>
-                                                <button type="button" class="waves-effect waves-circle btn btn-circle btn-dark btn-xs mr-5"><i class="fa fa-share-alt"></i></button>
-                                            </div>
-                                          <div class="card-body">
-                                            <span class="badge badge-success mb-10">Online</span>
-                                            <h4 class="card-title">Security</h4>
-                                            <div class="d-flex justify-content-between">
-                                                <a href="#"><span class="font-weight-bold">Duration:</span> 6 Months</a>
-                                                <a href="#"><span class="font-weight-bold">Daily:</span> 2 Hours</a>
-                                            </div>
-                                          </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="card">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/1.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="position-absolute r-10 t-10"> 
-                                                <button type="button" class="waves-effect waves-circle btn btn-circle btn-dark btn-xs mr-5"><i class="fa fa-heart-o"></i></button>
-                                                <button type="button" class="waves-effect waves-circle btn btn-circle btn-dark btn-xs mr-5"><i class="fa fa-share-alt"></i></button>
-                                            </div>
-                                          <div class="card-body">
-                                            <span class="badge badge-success mb-10">Online</span>
-                                            <h4 class="card-title">Manegement</h4>
-                                            <div class="d-flex justify-content-between">
-                                                <a href="#"><span class="font-weight-bold">Duration:</span> 6 Months</a>
-                                                <a href="#"><span class="font-weight-bold">Daily:</span> 2 Hours</a>
-                                            </div>
-                                          </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-12">
-                                        <div class="card">
-                                            <a href="#">
-                                                <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/7.jpg' %}" alt="Card image cap">
-                                            </a>
-                                            <div class="position-absolute r-10 t-10"> 
-                                                <button type="button" class="waves-effect waves-circle btn btn-circle btn-dark btn-xs mr-5"><i class="fa fa-heart-o"></i></button>
-                                                <button type="button" class="waves-effect waves-circle btn btn-circle btn-dark btn-xs mr-5"><i class="fa fa-share-alt"></i></button>
-                                            </div>
-                                          <div class="card-body">
-                                            <span class="badge badge-success mb-10">Online</span>
-                                            <h4 class="card-title">IT & Software</h4>
-                                            <div class="d-flex justify-content-between">
-                                                <a href="#"><span class="font-weight-bold">Duration:</span> 6 Months</a>
-                                                <a href="#"><span class="font-weight-bold">Daily:</span> 2 Hours</a>
-                                            </div>
-                                          </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-             <div class="col-12 text-center">                    
-                    <a href="#" class="btn btn-primary mx-auto">View All</a>
-                </div>
-        </div>
 
-    </section>
-    
-    <section class="py-50" data-aos="fade-up">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-7 col-12 text-center">
-                    <h1 class="mb-15">Reviews & Ratings</h1>                
-                    <hr class="w-100 bg-primary">
+
+        <!-- Start of header section
+        ============================================= -->
+        <header id="header_main" class="saas_two_main_header">
+            <div class="container">
+                <div class="s_main_menu">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div class="brand_logo">
+                                <a href="!#"><img width="100px" src="{% static 'main/images/aibra4.png' %}" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="main_menu_list clearfix float-right">
+                                <nav class="s2-main-navigation  clearfix ul-li">
+                                    <ul id="main-nav" class="navbar-nav text-capitalize clearfix">
+                                        <li><a href="#eight-banner">Home</a></li>
+                                        <li><a href="#feature-eight">Service</a></li>
+                                        <li><a href="#str-about">About</a></li>
+                                        <li><a href="#ei-faq">FAQs</a></li>
+                                        <li><a href="#ei-screenshots">More</a> </li>
+                                        
+                                    </ul>
+                                </nav>
+                                <div style="background: linear-gradient(to right, #e90e8b, #8bc541);" class="saas_sign_up_btn text-center">
+                                    <a href="#!"> Get Started</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //desktop menu -->
+                <div class="s2-mobile_menu relative-position">
+                    <div class="s2-mobile_menu_button s2-open_mobile_menu">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <div class="s2-mobile_menu_wrap">
+                        <div class="mobile_menu_overlay s2-open_mobile_menu"></div>
+                        <div class="s2-mobile_menu_content">
+                            <div class="s2-mobile_menu_close s2-open_mobile_menu">
+                                <i class="far fa-times-circle"></i>
+                            </div>
+                            <div class="m-brand-logo text-center">
+                                <a href="!#"><img src="assets/img/saas-c/logo/logo.png" alt=""></a>
+                            </div>
+                            <nav class="s2-mobile-main-navigation  clearfix ul-li">
+                             <ul id="m-main-nav" class="navbar-nav text-capitalize clearfix">
+                                <li><a href="#eight-banner">Home</a></li>
+                                <li><a href="#feature-eight">Service</a></li>
+                                <li><a href="#str-about">About</a></li>
+                                <li><a href="#ei-faq">FAQs</a></li>
+                                <li><a href="#ei-screenshots">More</a> </li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
             </div>
-            <div class="row mt-30">             
-                <div class="col-md-3 col-12">
-                    <div class="box pull-up">
-                        <div class="box-body">
-                            <div>
-                                <div class="d-flex align-items-center mb-30">
-                                    <div class="mr-15">
-                                        <img src="{% static 'main/images/front-end-img/avatar/1.jpg' %}" class="avatar avatar-lg rounded10" alt="">
+        </div>
+    </header>
+    <!-- End of header section
+        ============================================= -->
+
+
+    <!-- Start of Banner section
+        ============================================= -->
+        <section id="eight-banner" class="eight-banner-section position-relative">
+            <div class="container" >
+                <div class="row" style="background-color: red !important">
+                    <div class="col-lg-12">
+                        <div class="eight-banner-content" >
+                            <div class="banner-content-box appeight-headline pera-content">
+                                <h1 class="cd-headline clip is-full-width" style="font-size: 40px;">
+                                    Blockchain & AI enabled </h1><h1 class="cd-headline clip is-full-width">
+                                    
+                                    <span class="cd-words-wrapper">
+                                        <b class="is-visible" style="color:#8bc541">Recruitment</b>
+                                        <b  style="color:#f15b29">Recruitment</b>
+                                        <b  style="color:#e90e8b">Recruitment</b>
+                                        <b  style="color:#ef4237">Recruitment</b>
+                                    </span>
+                                </h1>
+                                <P style="z-index: 1;">AIBRA decentralizes the typical recruitment paradigm creating an ecosystem where recruiters, job seekers and recruitment agencies are united thereby  providing more value for the future of recruitment.</P>
+                                <div class="ei-banner-btn">
+                                    <a href="#"><i class="fas fa-power-off"></i> Start Now</a>
+                                    <a href="#"><span>built on</span> <img src="https://www.dexlab.space/img/solana_color.png"> </a>
+                                </div>
+                                <div class="ei-banner-review pera-content ul-li">
+                                    <ul>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                    </ul>
+                                   
+                                </div>
+                            </div>
+                            <div style="border-radius: 10px;" class="ei-banner-mbl-mockup wow fadeInRight" data-wow-delay="600ms" data-wow-duration="1500ms">
+                                <img  src="{% static 'main/assets/img/dark-img/output-onlinepngtools.png' %}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="waveWrapper waveAnimation">
+                <div class="waveWrapperInner bgTop">
+                    <div class="wave waveTop" style="background-image: url({% static 'main/assets/img/dark-img/dw1.png' %})"></div>
+                </div>
+                <div class="waveWrapperInner bgMiddle">
+                    <div class="wave waveMiddle" style="background-image: url({% static 'main/assets/img/dark-img/dw2.png' %})"></div>
+                </div>
+                <div class="waveWrapperInner bgBottom">
+                    <div class="wave waveBottom" style="background-image: url({% static 'main/assets/img/dark-img/dw3.png' %})"></div>
+                </div>
+            </div>
+        </section>
+    <!-- End of Banner section
+        ============================================= --> 
+
+    <!-- Start of Featured  section
+        ============================================= -->
+        <section id="feature-eight" class="feature-eight-section position-relative">
+            <div class="container">
+                <div class="eight-section-title appeight-headline pera-content text-center">
+                    <span class="eg-title-tag">
+                        The Union of Artificial Intelligence and Blockchain tech. <i class="square-shape"><i></i><i></i> <i></i> <i></i> </i>
+                    </span>
+                    <h2>AIBRA's Metaverse
+                        
+                        <p>whether or not you are a recruitment agency, a job seeker wishing to work for a toptier agency or a company seeking qualified and talented workers AIBRA ensures you achieve your desire in for easy steps.</p>
+                    </div>
+                    <!-- /title -->
+
+                    <div class="eight-feature-content">
+                        <div class="row justify-content-md-center">
+                            <div class="col-lg-3 col-md-6  wow fadeFromUp" data-wow-delay="0ms" data-wow-duration="1500ms" >
+                                <div class="eight-feature-box text-center position-relative" style="background: linear-gradient(to right, #f69322, #e90e8b);">
+                                    <div class="feature-icon8 position-relative">
+                                        <i class="flaticon-logo"></i>
+                                        <span class="ei-icon-bg"></span>
                                     </div>
-                                    <div class="d-flex flex-column font-weight-500">
-                                        <a href="#" class="text-dark hover-primary mb-1 font-size-16">Johen Kothari</a>
-                                        <span class="text-fade font-size-12">Software Engineer</span>
+                                    <div class="feature-text8 appeight-headline pera-content">
+                                        <h3>Unique Passport</h3>
+                                        <p  style="color: #000000;">Connect to Jobs and Company globally using a unique VR experience passport</p>
+                                    </div>
+                                    <div class="ei-feature-more">
+                                        <a href="#"><i class="fas fa-plus"></i></a>
                                     </div>
                                 </div>
-                                <p class="mb-25 min-h-120">A great aspect of this course is the student mentors. These people are always there to help, support, and motivate the student to complete modules...</p>
-                                <div class="d-flex align-items-center">
-                                    <a href="#">
-                                        <i class="mr-15 fa fa-linkedin-square"></i>
-                                        <span>Detailed Review</span>                                    
-                                    </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 wow fadeFromUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+                                <div class="eight-feature-box text-center position-relative" style="background: linear-gradient(to right, #e90e8b, #8bc541);">
+                                    <div class="feature-icon8 position-relative">
+                                        <i class="flaticon-computer"></i>
+                                        <span class="ei-icon-bg"></span>
+                                    </div>
+                                    <div class="feature-text8 appeight-headline pera-content">
+                                        <h3>Virtual Interview</h3>
+                                        <p style="color: #000000;">get interviewed from where ever you are with our AI enhanced recruitment system.</p>
+                                    </div>
+                                    <div class="ei-feature-more">
+                                        <a href="#"><i class="fas fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 wow fadeFromUp" data-wow-delay="900ms" data-wow-duration="1500ms">
+                                <div class="eight-feature-box text-center position-relative" style="background: linear-gradient(to right, #8bc541, #d6de27);">
+                                    <div class="feature-icon8 position-relative">
+                                        <i class="flaticon-pen-tool"></i>
+                                        <span class="ei-icon-bg"></span>
+                                    </div>
+                                    <div class="feature-text8 appeight-headline pera-content">
+                                        <h3>Multiple Income Streams</h3>
+                                        <p style="color: #000000;">stake your resume, expand your network, work from anywhere.</p>
+                                    </div>
+                                    <div class="ei-feature-more">
+                                        <a href="#"><i class="fas fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 wow fadeFromUp" data-wow-delay="1200ms" data-wow-duration="1500ms">
+                                <div class="eight-feature-box text-center position-relative" style="background: linear-gradient(to right, #ef4237, #d6de27);">
+                                    <div class="feature-icon8 position-relative">
+                                        <i class="flaticon-layers"></i>
+                                        <span class="ei-icon-bg"></span>
+                                    </div>
+                                    <div class="feature-text8 appeight-headline pera-content">
+                                        <h3>AIBRA Token</h3>
+                                        <p  style="color: #000000;">AIBRA token will be available to buy and sell via both Decentralized and Centralized exchanges. </p>
+                                    </div>
+                                    <div class="ei-feature-more">
+                                        <a href="#"><i class="fas fa-plus"></i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-12">
-                    <div class="box pull-up">
-                        <div class="box-body">
-                            <div>
-                                <div class="d-flex align-items-center mb-30">
-                                    <div class="mr-15">
-                                        <img src="{% static 'main/images/front-end-img/avatar/2.jpg' %}" class="avatar avatar-lg rounded10" alt="">
+                <div class="ei-feature-shape"><img src="{% static 'main/assets/img/app-landing/shape/f-shape1.png' %}" alt=""></div>
+            </section>
+    <!-- End of Featured section
+        ============================================= --> 
+
+        <!-- Start of About Us section
+            ============================================= -->
+            <section id="str-about" class="str-about-section position-relative">
+                <div class="str-aboutbg1 position-absolute"><img src="{% static 'main/assets/img/startup/shape/vs1.png' %}" alt=""></div>
+                <div class="str-aboutbg2 position-absolute"><img src="{% static 'main/assets/img/startup/shape/vs2.png' %}" alt=""></div>
+                <div class="str-aboutbg3 position-absolute"><img src="{% static 'main/assets/img/startup/shape/vs3.png' %}" alt=""></div>
+                <div class="container">
+                    <div class="str-about-content">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="str-about-text wow fadeFromRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+                                    <div class="str-section-title text-left str-title-left str-headline">
+                                        <span class="str-title-tag">About us</span>
+                                        <h2>Connect with Jobs Worldwide
+                                        </h2>
                                     </div>
-                                    <div class="d-flex flex-column font-weight-500">
-                                        <a href="#" class="text-dark hover-primary mb-1 font-size-16">Johen doe</a>
-                                        <span class="text-fade font-size-12">Vice President</span>
+                                    <div class="str-about-textarea">
+                                        The AIBRA platform aligns job ecosystem participants in an open economy that increases value creation and distribution, whether you are a company seeking to fill your vacancies with freelancers, remote workers or full time workers, or a recruitment agency skilled in the art of scouting and hiring the best job seekers for employers, or a job seeker with the right skillset seeking a platform to sell your skills  be it freelancing, remote jobs or onsite jobs, AIBRA is the platform for you.   
+                                    </div>
+                                    <div class="str-about-details" style="color: #ff00d6">
+                                       AIBRA provides global users a VR experience passport that shield their adventure to any Metaverse in a connected environment
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="str-about-img position-relative wow fadeFromLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
+                                    <div class="str-about-shape"><img src="{% static 'main/assets/img/startup/shape/abs.png' %}" alt=""></div>
+                                    <!--<div class="str-about-logo"><img src="{% static 'main/images/aibra4.png' %}" alt=""></div>-->
+                                    <div class="str-about-img-field">
+                                        <div class="str-about-pic">
+                                            <img src="https://wallpapershome.com/images/pages/pic_v/12350.jpg" alt="">
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="str-about-img-field">
+                                        <div class="str-about-pic">
+                                            <img src="https://miro.medium.com/max/1838/1*0zqgl9y-UixJnpGXrbAscw.jpeg" alt="">
+                                        </div>
+                                        <div class="str-about-pic">
+                                            <img src="http://static1.squarespace.com/static/6100108916afa743e1a8fbad/t/61162f912f207616a522f93a/1628843923461/metaverse-770x513.jpg?format=1500w" alt="">
+                                        </div>
                                     </div>
                                 </div>
-                                <p class="mb-25 min-h-120">This course actually helped me move from being a general manager to vice president. The content was exciting. I actually implemented what I learnt through case...</p>
-                                <div class="d-flex align-items-center">
-                                    <a href="#">
-                                        <i class="mr-15 fa fa-linkedin-square"></i>
-                                        <span>Detailed Review</span>                                    
-                                    </a>
+                            </div>
+                        </div>
+                        <div class="str-about-feature-area">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="str-about-feature-box clearfix wow fadeFromLeft" data-wow-delay="0ms" data-wow-duration="1500ms" style="background: linear-gradient(to right, #f69322, #e90e8b);">
+                                        <div class="str-about-feature-icon text-center float-left">
+                                            <i class="flaticon-null-8"></i>
+                                        </div>
+                                        <div class="str-about-feature-text str-headline" >
+                                            <h3>Decentralized Career Metaverse 
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="str-about-feature-box clearfix wow fadeFromLeft" data-wow-delay="300ms" data-wow-duration="1500ms" style="background: linear-gradient(to right, #e90e8b, #8bc541);">
+                                        <div class="str-about-feature-icon text-center float-left">
+                                            <i class="flaticon-null-7"></i>
+                                        </div>
+                                        <div class="str-about-feature-text str-headline">
+                                            <h3>Artificial Intelligence Enabled
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="str-about-feature-box clearfix wow fadeFromLeft" data-wow-delay="600ms" data-wow-duration="1500ms" style="background: linear-gradient(to right, #8bc541, #d6de27);">
+                                        <div class="str-about-feature-icon text-center float-left">
+                                            <i class="flaticon-null-6"></i>
+                                        </div>
+                                        <div class="str-about-feature-text str-headline">
+                                            <h3>First on the Solana Ecosystem
+                                            </h3>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-12">
-                    <div class="box pull-up">
-                        <div class="box-body">
-                            <div>
-                                <div class="d-flex align-items-center mb-30">
-                                    <div class="mr-15">
-                                        <img src="{% static 'main/images/front-end-img/avatar/3.jpg' %}" class="avatar avatar-lg rounded10" alt="">
+            </section>
+        <!-- End of About Ud section
+            ============================================= --> 
+
+    <!-- Start of service  section
+        ============================================= -->
+        <section id="eight-service" class="eight-service-section position-relative">
+            <div class="container">
+                <div class="eight-service-slide   clearfix wow fadeFromLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
+                    <div class="ei-service-slide-btn ul-li-block clearfix">
+                        <div class="banner-pager clearfix" id="banner-pager">
+                            <a class="pager" data-slide-index="0">
+                                <div class="ei-service-icon-text text-right appeight-headline pera-content">
+                                    <div class="ei-service-icon float-right text-center">
+                                        <i class="flaticon-verified-user"></i>
                                     </div>
-                                    <div class="d-flex flex-column font-weight-500">
-                                        <a href="#" class="text-dark hover-primary mb-1 font-size-16">Anshu Srivastav</a>
-                                        <span class="text-fade font-size-12">Research Assistant</span>
+                                    <div class="ei-service-text">
+                                        <h3>Secure</h3>
+                                        <p>AIBRA provides highest level of security for user data.</p>
                                     </div>
                                 </div>
-                                <p class="mb-25 min-h-120">Group case studies really give a sense of teamwork, as it happens in regular classroom studies. It teaches us coordination and right attitude as a team...</p>
-                                <div class="d-flex align-items-center">
-                                    <a href="#">
-                                        <i class="mr-15 fa fa-linkedin-square"></i>
-                                        <span>Detailed Review</span>                                    
-                                    </a>
+                            </a>
+
+                            <a class="pager" data-slide-index="1">
+                                <div class="ei-service-icon-text text-right appeight-headline pera-content">
+                                    <div class="ei-service-icon float-right text-center">
+                                        <i class="flaticon-crop"></i>
+                                    </div>
+                                    <div class="ei-service-text">
+                                        <h3>Well Organized</h3>
+                                        <p>With its well organized interface AIBRA ensures ease of use for all users.</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="pager" data-slide-index="2">
+                                <div class="ei-service-icon-text text-right appeight-headline pera-content">
+                                    <div class="ei-service-icon float-right text-center">
+                                        <i class="flaticon-web-development"></i>
+                                    </div>
+                                    <div class="ei-service-text">
+                                        <h3>Clean coding</h3>
+                                        <p>AIBRA provides light weight and clean codebase hence giving the finnest experience to its exteemed users.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="eight-service-text position-relative appeight-headline wow fadeFromRight" data-wow-delay="300ms" data-wow-duration="1500ms">
+                    <div class="ei-service-slide-mbl" data-background="assets/img/app-landing/mockup/smu1.png">
+                        <div class="slide-inner">
+                            <div class="ei-service-slide">
+                                <div class="slide-item">
+                                    <div class="image">
+                                        <img src="{% static 'main/assets/img/app-landing/screenshoot/Screenshot1.png' %}" alt="" />
+                                    </div>
+                                </div>
+                                <div class="slide-item">
+                                    <div class="image">
+                                        <img src="{% static 'main/assets/img/app-landing/screenshoot/slider-01.jpg' %}" alt="" />
+                                    </div>
+                                </div>
+                                <div class="slide-item">
+                                    <div class="image">
+                                        <img src="{% static 'main/assets/img/app-landing/screenshoot/slider-01.jpg' %}" alt="" />
+                                    </div>
+                                </div>
+                                <div class="slide-item">
+                                    <div class="image">
+                                        <img src="{% static 'main/assets/img/app-landing/screenshoot/slider-01.jpg' %}" alt="" />
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <h2>AIBRA Unique Features</h2>
+                </div>
+            </div>
+            <div class="s-shape-bg1" data-parallax='{"x" : -70}'><img src="{% static 'main/assets/img/app-landing/shape/s-shape3.png' %}" alt=""></div>
+            <div class="s-shape-bg2 text-center"><img src="{% static 'main/assets/img/app-landing/shape/s-shape4.png' %}" alt=""></div>
+        </section>
+    <!-- End of service  section
+        ============================================= -->
+
+
+    <!-- Start of Fun fact   section
+        ============================================= -->
+        <section id="fun-fact" class="eg-fun-fact-section position-relative">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="eg-funfact-content clearfix position-relative">
+                            <div class="eg-fun-fact-mockup wow fadeFromLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
+                                <div class="main-mockup">
+                                    <img src="{% static 'main/assets/img/app-landing/mockup/fmu1.png' %}" alt="">
+                                </div>
+                                <div class="fn-shape fn-shape-item1" data-parallax='{"y" : 50}'><img src="{% static 'main/assets/img/app-landing/mockup/fmu2.png' %}" alt=""></div>
+                                <div class="fn-shape fn-shape-item2" data-parallax='{"y" : 60}'><img src="{% static 'main/assets/img/app-landing/mockup/fmu3.png' %}" alt=""></div>
+                                <div class="fn-shape fn-shape-item3" data-parallax='{"x" : -50}'><img src="{% static 'main/assets/img/app-landing/shape/fc1.png' %}" alt=""></div>
+                                <div class="fn-shape fn-shape-item4" data-parallax='{"x" : -40}'><img src="{% static 'main/assets/img/app-landing/shape/fc2.png' %}" alt=""></div>
+                            </div>
+                            <div class="eg-funfact-text float-right wow fadeFromRight" data-wow-delay="300ms" data-wow-duration="1500ms">
+                                <div class="eight-section-title appeight-headline pera-content text-left">
+                                    <span class="eg-title-tag"> Built on Solana
+                                        <i class="square-shape"><i></i><i></i><i></i><i></i></i></span>
+                                        <h2>The First Global Career Metaverse on Solana
+                                            </h2>
+                                            <p>AIBRA builds the D-App where Users can possess unique Avatar Profile NFT. The Avatar Profile serves as a Career passport and help them get connected with the ecosystem of Global Talents, Companies, Organizations through daily Social Feeds, Decentralized Finance & Data Marketplace</p>
+                                                <br><br>
+                                            <p style="color: #f69322">Our Projection for the first 4 months of our launch</p>
+                                        </div>
+                                        <!-- /title -->
+                                        <div class="fun-fact-counter position-relative clearfix">
+                                            <div class="eg-counter-number pera-content text-center">
+                                                <span style="font-size: 30px;" class="odometer" data-count="20">00</span><strong>+</strong>
+                                                <p style="font-size: 14">Awesome
+                                                Integration</p>
+                                            </div>
+                                            <div class="eg-counter-number pera-content text-center">
+                                                <span style="font-size: 30px;" class="odometer" data-count="2000000">00</span><strong>+</strong>
+                                                <p style="font-size-14">Projected Users</p>
+                                            </div>
+                                            <div class="eg-counter-number pera-content text-center">
+                                                <span style="font-size: 30px;" class="odometer" data-count="115000">00</span><strong>+</strong>
+                                                <p style="font-size-14">Jobs Created</p>
+                                            </div>
+                                            <div class="eg-counter-number pera-content text-center">
+                                                <span style="font-size: 30px;" class="odometer" data-count="250">00</span><strong>+</strong>
+                                                <p style="font-size-14">Income Streams
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fn-bg-shape position-absolute"><img src="{% static 'main/assets/img/app-landing/shape/fns1.png' %}" alt=""></div>
+                </section>
+    <!-- End of Fun fact  section
+        ============================================= --> 
+
+    <!-- Start of How work  section
+        ============================================= -->
+        <section id="eg-how-work" class="eg-how-work-section position-relative" style="background-color: 
+#9e2063;">
+            <div class="how-work-bg-shape position-absolute"><img src="{% static 'main/assets/img/app-landing/shape/hws.png' %}" alt=""></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="ei-how-work-content-item wow fadeFromUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+                            <div class="eight-section-title appeight-headline pera-content text-left">
+                                <span class="eg-title-tag">
+                                    Roadmap?<i class="square-shape"><i></i><i></i><i></i><i></i></i>
+                                </span>
+                                <h2>Our Roadmap
+                                    
+                                </h2>
+                            </div>
+                            <!-- /title -->
+                            <div id="how-workscrollbar" class="how-work-scroller">
+                                <div class="eg-how-work-content">
+                                    <div class="eg-how-work-icon-text position-relative" style="background-color: #8bc541;">
+                                        <span class="scroller-no" style="color: #f69221">1</span>
+                                        <div class="eg-how-work-icon float-left text-center">
+                                            <i class="flaticon-verified-user"></i>
+                                        </div>
+                                        <div class="eg-how-work-text appeight-headline pera-content" >
+                                            <h3>IDO & MVP (Q4 2021)</h3>
+                                            <p style="color: #000000;">AIBRA Initial Dex Offering and Minimum Viable Product </p>
+                                        </div>
+                                    </div>
+                                    <div class="eg-how-work-icon-text position-relative" style="background-color: #8bc541;">
+                                        <span class="scroller-no" style="color: #f69221">2</span>
+                                        <div class="eg-how-work-icon float-left text-center">
+                                            <i class="flaticon-download"></i>
+                                        </div>
+                                        <div class="eg-how-work-text appeight-headline pera-content">
+                                            <h3>Q1, 2022</h3>
+                                            <p style="color: #000000;">Listing Beta Testnet Launch.</p>
+                                            <p style="color: #000000;">D-APP Official Mainnet Launch</p>
+                                        </div>
+                                    </div>
+                                    <div class="eg-how-work-icon-text position-relative" style="background-color: #8bc541;">
+                                        <span class="scroller-no" style="color: #f69221">3</span>
+                                        <div class="eg-how-work-icon float-left text-center">
+                                            <i class="flaticon-corporate-identity"></i>
+                                        </div>
+                                        <div class="eg-how-work-text appeight-headline pera-content">
+                                            <h3>Q2, 2022</h3>
+                                            <p style="color: #000000;">Profile Avatar and Resume NFT Marketplace</p>
+                                        </div>
+                                    </div>
+                                    <div class="eg-how-work-icon-text position-relative" style="background-color: #8bc541;">
+                                        <span class="scroller-no" style="color: #f69221">4</span>
+                                        <div class="eg-how-work-icon float-left text-center">
+                                            <i class="flaticon-text"></i>
+                                        </div>
+                                        <div class="eg-how-work-text appeight-headline pera-content">
+                                            <h3>Q3, 2022</h3>
+                                            <p style="color: #000000;">AIBRA Version 2.0 Launch.</p>
+                                        </div>
+                                    </div>
+                                    <div class="eg-how-work-icon-text position-relative" style="background-color: #8bc541;">
+                                        <span class="scroller-no" style="color: #f69221">5</span>
+                                        <div class="eg-how-work-icon float-left text-center">
+                                            <i class="flaticon-idea"></i>
+                                        </div>
+                                        <div class="eg-how-work-text appeight-headline pera-content">
+                                            <h3>Q4, 2022</h3>
+                                            <p style="color: #000000;">Mass Adoption in Affiliate Career, DeFi Payroll, School Aids</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    <!-- End  of How work  section
+        ============================================= -->   
+
+
+    <!-- Start of App Download  section
+        ============================================= -->
+        <section id="ei-appdownload" class="ei-appdownload-section position-relative" data-background="{% static 'main/assets/img/dark-img/dbg1.png' %}">
+            <div class="container">
+                <div class="ei-appdownload-content">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="ei-app-mockup-img  wow fadeFromRight" data-wow-delay="300ms" data-wow-duration="1500ms">
+                                <img src="https://image.thanhnien.vn/w1024/Uploaded/2021/cdxwperec/2021_10_23/metaverse-la-gi-6421.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="ei-app-down-text wow fadeFromLeft" data-wow-delay="600ms" data-wow-duration="1500ms">
+                                <div class="eight-section-title appeight-headline pera-content text-left">
+                                    <span class="eg-title-tag">
+                                        App Download<i class="square-shape"><i></i><i></i><i></i><i></i></i>
+                                    </span>
+                                    <h2>Work and Earn from anywhere
+                                       
+                                    </h2>
+                                    <p>In AIBRA network, users have opportunities to earn significant incomes by utilizing their expertise and providing services to the whole world.</p>
+                                </div>
+                                <!-- /title -->
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ei-appdownloaad-shape app-shape1" data-parallax='{"y" : -100}'><img src="{% static 'main/assets/img/dark-img/bdg2.png' %}" alt=""></div>
+            <div class="ei-appdownloaad-shape app-shape2" data-parallax='{"x" : -120}'><img src="{% static 'main/assets/img/dark-img/bdg3.png' %}" alt=""></div>
+            <div class="ei-appdownloaad-shape app-shape3" data-parallax='{"y" : -100}'><img src="{% static 'main/assets/img/dark-img/bdg4.png' %}" alt=""></div>
+        </section>
+    <!-- End of App Download section
+        ============================================= -->   
+
+
+                                              
+
+    <!-- Start of Faq section
+        ============================================= -->
+        <section id="ei-faq" class="ei-faq-section position-relative" style="background-color: #ed4334">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="ei-faq-content">
+                            <div class="ei-title-faq pera-content">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="eight-section-title appeight-headline pera-content text-left">
+                                            <span class="eg-title-tag">
+                                                Frequently asked Question<i class="square-shape"><i></i><i></i> <i></i><i></i></i>
+                                            </span>
+                                            <h2>Learn About AIBRA
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /title -->
+                                <style type="text/css">
+                                    .faq_bg{
+                                        background-color: #9e2063 !important;
+                                    }
+                                </style>
+                                <div class="ei-faq-queans">
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="ei-faq faq_bg">
+                                            <div class="ei-faq-header" id="headingOne">
+                                                <button class="collapsed" data-toggle="collapse" data-target="#collapseOne" aria-controls="collapseOne">
+                                                    What is the purpose of AIBRA?
+                                                </button>
+                                            </div>
+                                            <div id="collapseOne" class="collapse show" data-parent="#accordionExample">
+                                                <div class="ei-faq-body">
+                                                    AIBRA goal is to encapsulate the unique formular necessary to access and to improve the nature of job recruitment for all its stakeholders. <br> AIBRA.io unites digital currency and digital job recruitment for today’s peer-to-peer era by grounding the job
+                                                    industry in a secure, efficient and participant-centric ecosystem.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ei-faq">
+                                            <div class="ei-faq-header" id="headingtwo">
+                                                <button class="collapsed" data-toggle="collapse" data-target="#collapsetwo" aria-controls="collapsetwo">
+                                                    What is SPL?
+                                                </button>
+                                            </div>
+                                            <div id="collapsetwo" class="collapse" data-parent="#accordionExample">
+                                                <div class="ei-faq-body">
+                                                    The Solana Program Library (SPL) is a collection of on-chain programs targeting the Sealevel parallel runtime. These programs are tested against Solana's implementation of Sealevel, solana-runtime, and deployed to its mainnet. As others implement Sealevel, Solana will graciously accept patches to ensure the programs here are portable across all implementations.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ei-faq">
+                                            <div class="ei-faq-header" id="headingthree">
+                                                <button class="collapsed" data-toggle="collapse" data-target="#collapsethree" aria-controls="collapsethree">
+                                                    When will your IDO start?
+                                                </button>
+                                            </div>
+                                            <div id="collapsethree" class="collapse" data-parent="#accordionExample">
+                                                <div class="ei-faq-body">
+                                                    IDO will take place in the first quater of 2022, date and rules for IDO will be announced on our  <a href="">Twitter Page</a> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ei-faq">
+                                            <div class="ei-faq-header" id="headingfour">
+                                                <button class="collapsed" data-toggle="collapse" data-target="#collapsefour" aria-controls="collapsefour">
+                                                    What is the goal of the AIBRA network?
+                                                </button>
+                                            </div>
+                                            <div id="collapsefour" class="collapse" data-parent="#accordionExample">
+                                                <div class="ei-faq-body">
+                                                    The AIBRA.io platform and the AIBRA (AIR) token create and distribute value across recruitment and job ecosystem in a manner that incentivizes the health and growth of the network and its competitiveness in an increasingly crowded and coveted space. 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-12">
-                    <div class="box pull-up">
-                        <div class="box-body">
-                            <div>
-                                <div class="d-flex align-items-center mb-30">
-                                    <div class="mr-15">
-                                        <img src="{% static 'main/images/front-end-img/avatar/4.jpg' %}" class="avatar avatar-lg rounded10" alt="">
-                                    </div>
-                                    <div class="d-flex flex-column font-weight-500">
-                                        <a href="#" class="text-dark hover-primary mb-1 font-size-16">Mical Doe</a>
-                                        <span class="text-fade font-size-12">Analyst</span>
-                                    </div>
-                                </div>
-                                <p class="mb-25 min-h-120">It doesn’t matter what your previous working background is, as everything is taught from the basics.</p>
-                                <div class="d-flex align-items-center">
-                                    <a href="#">
-                                        <i class="mr-15 fa fa-linkedin-square"></i>
-                                        <span>Detailed Review</span>                                    
-                                    </a>
-                                </div>
-                            </div>
+                <span class="ei-faq-shape fq-shape-style1" data-parallax='{"x" : 50}'><img src="{% static 'main/assets/img/app-landing/shape/fq-shape1.png' %}" alt=""></span>
+                <span class="ei-faq-shape fq-shape-style2"><img src="{% static 'main/assets/img/app-landing/shape/fq-shape2.png' %}" alt=""></span>
+                <span class="ei-faq-shape fq-shape-style3"><img src="{% static 'main/assets/img/app-landing/shape/fq-shape3.png' %}" alt=""></span>
+                <span class="ei-faq-shape fq-shape-style4" data-parallax='{"y" : 60}'><img src="assets/img/app-landing/shape/fq-shape4.png" alt=""></span>
+                <span class="ei-faq-shape fq-shape-style5"><img src="{% static 'main/assets/img/app-landing/shape/fq-shape5.png' %}" alt=""></span>
+                <span class="ei-faq-shape fq-shape-style6"><img src="{% static 'main/assets/img/app-landing/shape/fq-shape6.png' %}" alt=""></span>
+                <span class="ei-faq-shape fq-shape-style8"><img src="{% static 'main/assets/img/app-landing/shape/fq-shape8.png' %}" alt=""></span>
+                <span class="ei-faq-shape fq-shape-style7"><img src="{% static 'main/assets/img/app-landing/shape/fq-shape7.png' %}" alt=""><img src="{% static 'main/assets/img/app-landing/shape/fq-shape7.png' %}" alt="">
+                    <img src="{% static 'main/assets/img/app-landing/shape/fq-shape7.png' %}" alt=""></span>
+                </section>
+    <!-- End of Faq section
+        ============================================= --> 
+
+
+    <!-- Start of screen-shoot section
+        ============================================= -->
+        <section id="ei-screenshots" class="ei-screenshots-section position-relative">
+            <div class="container">
+                <div class="eight-section-title appeight-headline pera-content text-center">
+                    <span class="eg-title-tag"> Join AIBRA <i class="square-shape"> <i></i><i></i><i></i><i></i></i></span>
+                    <h2>Join Us and Experience 
+                        <span>The Future of job Recruitment!</span></h2>
+                        
+                    </div>
+                    <!-- /title -->
+
+                    <div class="row ei-appScreenshotCarousel-container swiper-container">
+                        <div class="ei-screen-mobile-image"></div>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" style="background-image:url({% static 'main/assets/img/app-landing/screenshoot/Screenshot1.png' %})"></div>
+                            <div class="swiper-slide" style="background-image:url({% static 'main/assets/img/app-landing/screenshoot/Screenshot2.png' %})"></div>
+                            <div class="swiper-slide" style="background-image:url({% static 'main/assets/img/app-landing/screenshoot/Screenshot3.png' %})"></div>
+                            <div class="swiper-slide" style="background-image:url({% static 'main/assets/img/app-landing/screenshoot/Screenshot4.png' %})"></div>
+                            <div class="swiper-slide" style="background-image:url({% static 'main/assets/img/app-landing/screenshoot/Screenshot2.png' %})"></div>
+                            <div class="swiper-slide" style="background-image:url({% static 'main/assets/img/app-landing/screenshoot/Screenshot1.png' %})"></div>
+                            <div class="swiper-slide" style="background-image:url({% static 'main/assets/img/app-landing/screenshoot/Screenshot2.png' %})"></div>
+                            <div class="swiper-slide" style="background-image:url({% static 'main/assets/img/app-landing/screenshoot/Screenshot1.png' %})"></div>
+                            <div class="swiper-slide" style="background-image:url({% static 'main/assets/img/app-landing/screenshoot/Screenshot.png' %})"></div>
+                            <div class="swiper-slide" style="background-image:url({% static 'main/assets/img/app-landing/screenshoot/Screenshot4.png' %})"></div>
+                        </div>
+                        <!-- Add Arrows -->
+                    </div>
+                    <!-- Navigations -->
+                    <div class="banner-navigation">
+                        <div class="swiper-button-prev"><span class="fas fa-chevron-left"></span></div>
+                        <div class="swiper-button-next"><span class="fas fa-chevron-right"></span></div>
+                    </div>
+                </div>
+                <div class="screenshoot-vector screenshoot-shape1 position-absolute"> <img src="{% static 'main/assets/img/app-landing/shape/ss-shape1.png' %}" alt=""></div>
+                <div class="screenshoot-vector screenshoot-shape2 position-absolute"> <img src="{% static 'main/assets/img/app-landing/shape/ss-shape2.png' %}" alt=""></div>
+            </section>
+    <!-- End of screen-shoot section
+        ============================================= --> 
+
+
+
+
+     <!-- Start of Partner  section
+        ============================================= -->
+        <!--<section id="ei-partner" class="ei-partner-section">
+            <div class="container">
+                <div class="ei-partner-content">
+                    <div id="ei-partner-slide" class="partner-slide-area owl-carousel">
+                        <div class="partner-img">
+                            <img src="{% static 'main/assets/img/app-landing/partner/p1.png' %}" alt="">
+                        </div>
+                        <div class="partner-img">
+                            <img src="{% static 'main/assets/img/app-landing/partner/p2.png' %}" alt="">
+                        </div>
+                        <div class="partner-img">
+                            <img src="{% static 'main/assets/img/app-landing/partner/p3.png' %}" alt="">
+                        </div>
+                        <div class="partner-img">
+                            <img src="{% static 'main/assets/img/app-landing/partner/p4.png' %}" alt="">
+                        </div>
+
+                        <div class="partner-img">
+                            <img src="{% static 'main/assets/img/app-landing/partner/p2.png' %}" alt="">
+                        </div>
+                        <div class="partner-img">
+                            <img src="{% static 'main/assets/img/app-landing/partner/p3.png' %}" alt="">
                         </div>
                     </div>
-                </div>  
-                <div class="col-md-3 col-12">
-                    <div class="box pull-up">
-                        <div class="box-body">
-                            <div>
-                                <div class="d-flex align-items-center mb-30">
-                                    <div class="mr-15">
-                                        <img src="{% static 'main/images/front-end-img/avatar/5.jpg' %}" class="avatar avatar-lg rounded10" alt="">
-                                    </div>
-                                    <div class="d-flex flex-column font-weight-500">
-                                        <a href="#" class="text-dark hover-primary mb-1 font-size-16">Paton don</a>
-                                        <span class="text-fade font-size-12">Data Analyst</span>
-                                    </div>
-                                </div>
-                                <p class="mb-25 min-h-120">They will prepare you how to face Data Science job interviews along with this upGrad will also provide mock interviews and mock MCQ tests to check...</p>
-                                <div class="d-flex align-items-center">
-                                    <a href="#">
-                                        <i class="mr-15 fa fa-linkedin-square"></i>
-                                        <span>Detailed Review</span>                                    
-                                    </a>
+                    <div class="ei-partner-text appeight-headline pera-content">
+                        <div class="ei-partner-icon text-center float-left">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <h4>Trusted by 12,00 companies!</h4>
+                        <p>We have more than 1200+ trusted clients around World wide.</p>
+                    </div>
+                </div>
+            </div>
+        </section>-->
+     <!-- End  of Partner  section
+        ============================================= -->  
+
+     <!-- Start of Newslatter  section
+        ============================================= -->
+        <section id="ei-newslatter" class="ei-newslatter-section position-relative" style="background-color: red !important">
+            <div class="ei-newslatter-box position-relative">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="ei-newslatter-contnet appeight-headline pera-content">
+                                <h3>Join our  <span>waitlist!</span></h3>
+                                <div class="ei-newslatter-form position-relative">
+                                    <form action="#">
+                                        <input class="email" name="email" type="email" placeholder="Enter your email address">
+                                        <div class="nws-button position-absolute text-capitalize">
+                                            <button class="hover-btn" type="submit" value="Submit" style="background: linear-gradient(to right, #e90e8b, #8bc541);"> Subscribe Now</button>
+                                        </div>
+                                        <p>* enter your email address to get notifications...</p>
+                                    </form>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-12">
-                    <div class="box pull-up">
-                        <div class="box-body">
-                            <div>
-                                <div class="d-flex align-items-center mb-30">
-                                    <div class="mr-15">
-                                        <img src="{% static 'main/images/front-end-img/avatar/6.jpg' %}" class="avatar avatar-lg rounded10" alt="">
-                                    </div>
-                                    <div class="d-flex flex-column font-weight-500">
-                                        <a href="#" class="text-dark hover-primary mb-1 font-size-16">Johen Doe</a>
-                                        <span class="text-fade font-size-12">Samsung</span>
-                                    </div>
-                                </div>
-                                <p class="mb-25 min-h-120">Many of the basic concepts are being taught to build good intuition of Machine Learning models. Most of the basic math required for developing an intuition...</p>
-                                <div class="d-flex align-items-center">
-                                    <a href="#">
-                                        <i class="mr-15 fa fa-linkedin-square"></i>
-                                        <span>Detailed Review</span>                                    
-                                    </a>
-                                </div>
+                <div class="ei-news-vector1 position-absolute"><img src="{% static 'main/assets/img/app-landing/shape/n-shape1.png' %}" alt=""></div>
+                <div class="ei-news-vector2 position-absolute"><img src="{% static 'main/assets/img/app-landing/shape/n-shape2.png' %}" alt=""></div>
+                <div class="ei-news-vector3 position-absolute" data-parallax='{"x" : 50}'><img src="{% static 'main/assets/img/app-landing/shape/n-shape3.png' %}" alt=""></div>
+            </div>
+            <div class="ei-newslatter-mockup">
+                
+            </div>
+        </section>
+     <!-- End of Newslatter  section
+        ============================================= -->
+
+      <!-- Start of Footer  section
+        ============================================= -->
+        <section id="ei-footer" class="ei-footer-section position-relative">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="ei-footer-widget pera-content appeight-headline">
+                            <div class="ei-footer-logo">
+                                <img width="110px" src="{% static 'main/images/aibra4.png' %}" alt="">
+                            </div>
+                            <p>
+                                Artificial Intelligence and Blockchain Enhanced Recruitment App
+                            </p>
+                            <div class="ei-payment-mathod">
+                                <img src="https://www.dexlab.space/img/solana_color.png" alt="">
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3 col-12">
-                    <div class="box pull-up">
-                        <div class="box-body">
-                            <div>
-                                <div class="d-flex align-items-center mb-30">
-                                    <div class="mr-15">
-                                        <img src="{% static 'main/images/front-end-img/avatar/7.jpg' %}" class="avatar avatar-lg rounded10" alt="">
-                                    </div>
-                                    <div class="d-flex flex-column font-weight-500">
-                                        <a href="#" class="text-dark hover-primary mb-1 font-size-16">Moriss Kothari</a>
-                                        <span class="text-fade font-size-12">Software Engineer</span>
-                                    </div>
-                                </div>
-                                <p class="mb-25 min-h-120">You will be notified of any interview opportunities in ML and they will share your profile with the recruiters. This really helps to kick start your...</p>
-                                <div class="d-flex align-items-center">
-                                    <a href="#">
-                                        <i class="mr-15 fa fa-linkedin-square"></i>
-                                        <span>Detailed Review</span>                                    
-                                    </a>
-                                </div>
-                            </div>
+                    <div class="col-lg-4">
+                        <div class="ei-footer-widget appeight-headline ul-li-block">
+                            <h3 class="ei-widget-title">Useful link:</h3>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Policy</a></li>
+                                <li><a href="#">Service</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">GitHub</a></li>
+                                <li><a href="#">Documentation</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">WhitePaper</a></li>
+                                <li><a href="#">More</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="ei-footer-widget appeight-headline  ul-li-block">
+                            <h3 class="ei-widget-title">Contact:</h3>
+                            <h4>
+                                <i class="fas fa-envelope"></i>
+                                Send Mail: Admin 
+                                <span>(24/7)</span>
+                            </h4>
+                            <h4>
+                             <i class="fas fa-envelope"></i>
+                             Send Mail: Marketting, 
+                             <span>(24/7)</span>
+                         </h4>
+                         <div class="download-btn">
+                            <a href="#"><img src="{% static 'main/assets/img/app-landing/logo/app1.png' %}" alt=""></a>
+                            <a href="#"><img src="{% static 'main/assets/img/app-landing/logo/gp1.png' %}" alt=""></a>
+                        </div>
+                        <div class="ei-footer-social">
+                            <a href="#"><i class="fab fa-github "></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-medium"></i></a>
+                            <a href="#"><i class="fab fa-discord"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-12">
-                    <div class="box pull-up">
-                        <div class="box-body">
-                            <div>
-                                <div class="d-flex align-items-center mb-30">
-                                    <div class="mr-15">
-                                        <img src="{% static 'main/images/front-end-img/avatar/8.jpg' %}" class="avatar avatar-lg rounded10" alt="">
-                                    </div>
-                                    <div class="d-flex flex-column font-weight-500">
-                                        <a href="#" class="text-dark hover-primary mb-1 font-size-16">Johens Kothari</a>
-                                        <span class="text-fade font-size-12">Software Engineer</span>
-                                    </div>
-                                </div>
-                                <p class="mb-25 min-h-120">The course justifies every penny charged and is an investment that reaps benefits once we enter the market after course completion.</p>
-                                <div class="d-flex align-items-center">
-                                    <a href="#">
-                                        <i class="mr-15 fa fa-linkedin-square"></i>
-                                        <span>Detailed Review</span>                                    
-                                    </a>
-                                </div>
+            </div>
+        </div>
+        <div class="ei-footer-copyright">
+            <div class="container">
+                <div class="ei-footer-copyright-content">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="ei-copyright-text">
+                                <p>© 2021 <a href="#">oppenheim.io</a></p>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="ei-copyright-menu">
+                                <a href="#">Help</a>
+                                <a href="#">Terms & Conditions </a>
+                                <a href="#">Privacy </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="ei-footer-shape1 position-absolute" data-parallax='{"x" : 60}'><img src="{% static 'main/assets/img/app-landing/shape/fo-shape1.png' %}" alt=""></div>
+        <div class="ei-footer-shape2 position-absolute" data-parallax='{"y" : 60}'><img src="{% static 'main/assets/img/app-landing/shape/fo-shape2.png' %}" alt=""></div>
+        <div class="ei-footer-shape3 position-absolute"><img src="{% static 'main/assets/img/app-landing/shape/eimap.png' %}" alt=""></div>
     </section>
-    
-    
-    
-    <section class="py-50 bg-img countnm-bx" style="background-image: url(https://www.thecareercollege.com.au/wp-content/uploads/2020/05/ex-serch-and-recuruit-1.jpg)" data-overlay="5" data-aos="fade-up">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div class="text-center">
-                        <div class="w-80 h-80 l-h-100 rounded-circle b-1 border-white text-center mx-auto">
-                            <span class="text-white font-size-40 icon-User"><span class="path1"></span><span class="path2"></span></span>
-                        </div>
-                        <h1 class="countnm my-10 text-white font-weight-300">5428</h1>
-                        <div class="text-uppercase text-white">Job Seekers</div>
-                    </div>
-                </div>  
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div class="text-center">
-                        <div class="w-80 h-80 l-h-100 rounded-circle b-1 border-white text-center mx-auto">
-                            <span class="text-white font-size-40 icon-Book"></span>
-                        </div>
-                        <h1 class="countnm my-10 text-white font-weight-300">120</h1>
-                        <div class="text-uppercase text-white">Recruitment Agencies</div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div class="text-center">
-                        <div class="w-80 h-80 l-h-100 rounded-circle b-1 border-white text-center mx-auto">
-                            <span class="text-white font-size-40 icon-Group"><span class="path1"></span><span class="path2"></span></span>
-                        </div>
-                        <h1 class="countnm my-10 text-white font-weight-300">7485</h1>
-                        <div class="text-uppercase text-white">Companies</div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div class="text-center">
-                        <div class="w-80 h-80 l-h-100 rounded-circle b-1 border-white text-center mx-auto">
-                            <span class="text-white font-size-40 icon-Globe"><span class="path1"></span><span class="path2"></span></span>
-                        </div>
-                        <h1 class="countnm my-10 text-white font-weight-300">100</h1>
-                        <div class="text-uppercase text-white">Country</div>
-                    </div>
-                </div>          
-            </div>
-        </div>
-    </section>
-    
-    <section class="py-50 bg-white" data-aos="fade-up">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-7 col-12 text-center">
-                    <h1 class="mb-15">Know Your Applicants</h1>               
-                    <hr class="w-100 bg-primary">
-                    <p class="card-text">Know your applicants in four simple steps.</p>
-                </div>
-            </div>
-            <div class="row mt-30">
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div class="card">
-                        <a href="#">
-                            <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/1.jpg' %}" alt="Card image cap">
-                        </a>
-                        <div class="position-absolute r-10 t-10"> 
-                            <button type="button" class="waves-effect waves-circle btn btn-circle btn-dark btn-xs mr-5"><i class="fa fa-heart-o"></i></button>
-                            <button type="button" class="waves-effect waves-circle btn btn-circle btn-dark btn-xs mr-5"><i class="fa fa-share-alt"></i></button>
-                        </div>
-                      <div class="card-body">
-                        <h4 class="card-title">View Profile</h4>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary btn-outline btn-sm">Know More</a>
-                      </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div class="card">
-                        <a href="#">
-                            <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/2.jpg' %}" alt="Card image cap">
-                        </a>
-                        <div class="position-absolute r-10 t-10"> 
-                            <button type="button" class="waves-effect waves-circle btn btn-circle btn-dark btn-xs mr-5"><i class="fa fa-heart-o"></i></button>
-                            <button type="button" class="waves-effect waves-circle btn btn-circle btn-dark btn-xs mr-5"><i class="fa fa-share-alt"></i></button>
-                        </div>
-                      <div class="card-body">
-                        <h4 class="card-title">View CV and Qualification</h4>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary btn-outline btn-sm">Know More</a>
-                      </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div class="card">
-                        <a href="#">
-                            <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/3.jpg' %}" alt="Card image cap">
-                        </a>
-                        <div class="position-absolute r-10 t-10"> 
-                            <button type="button" class="waves-effect waves-circle btn btn-circle btn-dark btn-xs mr-5"><i class="fa fa-heart-o"></i></button>
-                            <button type="button" class="waves-effect waves-circle btn btn-circle btn-dark btn-xs mr-5"><i class="fa fa-share-alt"></i></button>
-                        </div>
-                      <div class="card-body">
-                        <h4 class="card-title">Give Assessment</h4>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary btn-outline btn-sm">Know More</a>
-                      </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div class="card">
-                        <a href="#">
-                            <img class="card-img-top" src="{% static 'main/images/front-end-img/courses/4.jpg' %}" alt="Card image cap">
-                        </a>
-                        <div class="position-absolute r-10 t-10"> 
-                            <button type="button" class="waves-effect waves-circle btn btn-circle btn-dark btn-xs mr-5"><i class="fa fa-heart-o"></i></button>
-                            <button type="button" class="waves-effect waves-circle btn btn-circle btn-dark btn-xs mr-5"><i class="fa fa-share-alt"></i></button>
-                        </div>
-                      <div class="card-body">
-                        <h4 class="card-title">Conference Interview</h4>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary btn-outline btn-sm">Know More</a>
-                      </div>
-                    </div>
-                </div>
-               
-            </div>
-        </div>
-    </section>
-    
-{% endblock %}
+      <!-- End of Footer  section
+        ============================================= -->            
+
+        <!-- JS library -->
+        <script src="{% static 'main/assets/js/jquery.js' %}"></script>
+        <script src="{% static 'main/assets/js/popper.min.js' %}"></script>
+        <script src="{% static 'main/assets/js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'main/assets/js/appear.js' %}"></script>
+        <script src="{% static 'main/assets/js/owl.js' %}"></script>
+        <script src="{% static 'main/assets/js/wow.min.js' %}"></script>
+        <script src="{% static 'main/assets/js/aos.js' %}"></script>
+        <script src="{% static 'main/assets/js/slick.js' %}"></script>
+        <script src="{% static 'main/assets/js/pagenav.js' %}"></script>
+        <script src="{% static 'main/assets/js/odometer.js' %}"></script>
+        <script src="{% static 'main/assets/js/bxslider.js' %}"></script>
+        <script src="{% static 'main/assets/js/jquery.barfiller.js' %}"></script>
+        <script src="{% static 'main/assets/js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+        <script src="{% static 'main/assets/js/parallax-scroll.js' %}"></script>
+        <script src="{% static 'main/assets/js/swiper.min.js' %}"></script>
+        <script src="{% static 'main/assets/js/typer-new.js' %}"></script>
+        <script src="{% static 'main/assets/js/script.js' %}"></script>
+    </body>
+    </html>

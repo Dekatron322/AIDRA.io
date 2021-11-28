@@ -104,6 +104,15 @@ def ForgotPasswordView(request):
 		context = {}
 		return render(request, "main/forgot_password.html", context )
 
+def PriceView(request):
+	if request.method == "POST":
+		pass
+
+
+	else:
+		context = {}
+		return render(request, "main/pricing.html", context )
+
 
 def ContactView(request):
 	if request.method == "POST":
